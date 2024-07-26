@@ -16,7 +16,7 @@ const Contact = () => {
           {social.map((Item, index) => (
             <li
               key={index}
-              className="h-[55px] w-[55px] flexCenter rounded-full bg-gray-500"
+              className="h-[55px] w-[55px] flex items-center justify-center rounded-full bg-gray-500"
             >
               <a href={Item.url} className="">
                 <img

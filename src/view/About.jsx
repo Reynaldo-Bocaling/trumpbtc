@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <section id="about" className="relative">
-      <div className="relative max-w-7xl mx-auto h-[200px] -mt-36 flexColCenter  bg-[#121212] rounded-tl-3xl rounded-tr-3xl border-l-[2px] border-t-[2px] border-r-[2px] border-yellow-500">
-        <div className="relative flexColCenter gap-5 max-w-3xl mx-auto z-[98]">
+      <div className="relative max-w-7xl mx-auto h-[200px] -mt-36 flex flex-col justify-center items-center  bg-[#121212] rounded-tl-3xl rounded-tr-3xl border-l-[2px] border-t-[2px] border-r-[2px] border-yellow-500">
+        <div className="relative flex flex-col justify-center items-center gap-5 max-w-3xl mx-auto z-[98]">
           <h1 className="title text-yellow-500 text-5xl font-extrabold mt-7">
             ABOUT US
           </h1>

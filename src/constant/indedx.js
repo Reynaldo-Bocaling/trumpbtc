@@ -1,7 +1,7 @@
-import dexscreener from "/img/socials/dexscreener.png";
-import telegram from "/img/socials/tele.png";
-import twitter from "/img/socials/twitter.png";
-import pancakeswap from "/img/socials/pancakeswap.png";
+import x from "/img/socials/x.png";
+import tele from "/img/socials/tele.png";
+import dextool from "/img/socials/dextool.png";
+import uniswap from "/img/socials/uniswap.png";
 
 export const navlinks = [
   {
@@ -48,7 +48,7 @@ export const howtobuy = [
       "If you don't have MetaMask yet, install the browser extension from metamask_io.",
       "Create a new wallet or import an existing one by following the on-screen instructions. Make sure to save your recovery phase in a secure location  ",
     ],
-    variant: "translate-y-0",
+    variant: "md:translate-y-0",
   },
   {
     title: "ADD FUNDS TO METAMASK",
@@ -56,7 +56,7 @@ export const howtobuy = [
       "Open Metamask and ensure you are on the correct network (typically Ethernet Mainnet)",
       'Click on "Buy" to Purchase Ethernet (ETH) through the available methods (credit card, bank transfer, etc.) or send ETH from another wallet to your MetaMask address.',
     ],
-    variant: "-translate-y-16",
+    variant: "md:-translate-y-16",
   },
   {
     title: "ADD $FIGHT TO METAMASK",
@@ -65,7 +65,7 @@ export const howtobuy = [
       'Select "Custom Token  and paste the FightCoin contract address ',
       "Fillin the token details if they do not auto-populate (Token Name: Fight, Symbol: FIGHT, Decimals: 18)",
     ],
-    variant: "-translate-y-24",
+    variant: "md:-translate-y-24",
   },
   {
     title: "ADD $FIGHT TO METAMASK",
@@ -74,29 +74,29 @@ export const howtobuy = [
       "Connect your MetaMask wallet to the DEX.",
       "Select the amount of ETH you want to trade for FightCoin and confirm the transaction",
     ],
-    variant: "-translate-y-32",
+    variant: "md:-translate-y-32",
   },
 ];
 
 export const social = [
   {
     label: "twitter",
-    icon: twitter,
+    icon: x,
     url: "",
   },
   {
     label: "telegram",
-    icon: telegram,
+    icon: tele,
     url: "",
   },
   {
     label: "dexscreener",
-    icon: dexscreener,
+    icon: dextool,
     url: "",
   },
   {
     label: "pancakeSwap",
-    icon: pancakeswap,
+    icon: uniswap,
     url: "",
   },
 ];

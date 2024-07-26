@@ -4,13 +4,16 @@ import { tokenomicsData } from "../constant/indedx";
 const Tokenomics = () => {
   return (
     <section id="tokenomics" className="relative pt-24  overflow-hidden">
-      <div className="max-w-7xl mx-auto flexColCenter ">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center ">
         <h1 className="title text-6xl font-extrabold text-yellow-500">
           TOKENOMICS
         </h1>
-        <ul className="mt-20 flexCenter gap-12 w-full ">
+        <ul className="mt-20 flex items-center justify-center gap-12 w-full ">
           {tokenomicsData.map((item, index) => (
-            <li key={index} className="flexColCenter gap-3">
+            <li
+              key={index}
+              className="flex flex-col items-center justify-center gap-3"
+            >
               <h1 className="text-3xl md:text-5xl text-[#c0c0c0] font-extrabold">
                 {item.value}
               </h1>
