@@ -5,15 +5,15 @@ import coins_animation from "../assets/bouncedCoin.json";
 const header = () => {
   return (
     <header className="w-full relative z-[99]">
-      <nav className="max-w-[90rem] w-full  absolute top-3 left-1/2 -translate-x-1/2 flexBetween py-4 px-8 rounded-full blur_effect">
-        <div className="flexCenter gap-2">
+      <nav className="max-w-[90rem] w-full  absolute top-3 left-1/2 -translate-x-1/2 flex items-center justify-between py-4 px-8 rounded-full blur_effect">
+        <div className="flex items-center justify-center gap-2">
           <Lottie
             animationData={coins_animation}
             className="absolute top-1/2 -translate-y-1/2 left-0 w-[100px] h-[100px]"
           />
           <h1 className="text-xl text-white font-bold pl-12">TRUMPBTC</h1>
         </div>
-        <ul className="flexCenter gap-5">
+        <ul className="flex items-center justify-center gap-5">
           {navlinks.map((item, index) => (
             <li key={index}>
               <a

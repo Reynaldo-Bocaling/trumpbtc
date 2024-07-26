@@ -12,7 +12,7 @@ const Hero = () => {
           FIGHT FOR FREEDOM
         </h2>
         <div className=" relative   max-w-xl  z-[89] mb-5">
-          <ul className="flexStart gap-7 mt-5">
+          <ul className="flex items-center justify-center gap-7 mt-5">
             {social.map((Item, index) => (
               <li
                 key={index}
