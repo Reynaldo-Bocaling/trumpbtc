@@ -32,7 +32,7 @@ const Contact = () => {
       <img
         src="/img/contact.jpg"
         alt=""
-        className="w-full h-[90vh] pointer-events-none"
+        className="w-full h- pointer-events-none"
       />
     </section>
   );
