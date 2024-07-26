@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luckiest+Guy&family=Permanent+Marker&family=Righteous&family=Sigmar+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Righteous", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+::selection {
+    background: #eab308;
+    color: black;
+}
+
+body {
+    background: #121212;
+    font-size: calc(1rem * var(--bfso, 1));
+}
+
+@layer utilities {
+
+    .flexCenter {
+        @apply flex items-center justify-center;
+    }
+
+    .flexBetween {
+        @apply flex items-center justify-between;
+    }
+
+    .flexAround {
+        @apply flex items-center justify-around;
+    }
+
+    .flexStart {
+        @apply flex items-center justify-start;
+    }
+
+    .flexEnd {
+        @apply flex items-center justify-end;
+    }
+
+    .flexColStart {
+        @apply flex flex-col items-start justify-center
+    }
+
+    .flexColCenter {
+        @apply flex flex-col items-center justify-center
+    }
+
+    .flexColEnd {
+        @apply flex flex-col items-end justify-center
+    }
+
+    .flexColBetween {
+        @apply flex flex-col items-center justify-between
+    }
+
+
+}
+
+.title {
+    font-family: "Luckiest Guy", cursive;
+}
+
+.extraText {
+    font-family: "Permanent Marker", cursive;
+}
+
+main {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hero {
+    background-image: url('/img/hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contac2t {
+    background-image: url('/img/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+#about::after {
+
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    width: 900px;
+    height: 500px;
+    transform: translateX(-50%);
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(32, 64%, 19%, 0.4),
+            transparent 64%);
+    z-index: 0;
+
+}
+
+#tokenomics::after {
+
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    width: 700px;
+    height: 500px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(32, 64%, 19%, 0.3),
+            transparent 64%);
+    z-index: 0;
+
+}
+
+#howtobuy::after {
+
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -100px;
+    width: 700px;
+    height: 500px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(33, 70%, 35%, 0.3),
+            transparent 64%);
+    z-index: -1;
+
+}
+
+
+
+.hero_title::first-letter {
+    font-size: 13rem;
+}
+
+.hero_title::after {
+    content: '';
+    height: 3px;
+    width: 600px;
+    background: #eab308;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    transform: translateY(-15px);
+}
+
+
+.btnStyle {
+    background-image: url('/img/button_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blur_effect {
+    background: rgba(27, 27, 27, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+
+@media (max-width: 767px) {
+    body {
+        zoom: 50%;
+
+    }
+}
+
+/* @media (max-width: 967px) {
+  body {
+    zoom: 50%;
+  }
+} */
