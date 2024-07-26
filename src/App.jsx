@@ -9,7 +9,7 @@ import HowToBuy from "./view/HowToBuy";
 
 const App = () => {
   return (
-    <main>
+    <main className="relative overflow-hidden">
       <Header />
       <Hero />
       <About />

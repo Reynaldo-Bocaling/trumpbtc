@@ -190,6 +190,12 @@ main {
         zoom: 50%;
 
     }
+
+    .hero_title::after {
+
+        width: 300px;
+
+    }
 }
 
 /* @media (max-width: 967px) {
