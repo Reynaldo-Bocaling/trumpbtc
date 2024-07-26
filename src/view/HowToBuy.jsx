@@ -14,7 +14,7 @@ const HowToBuy = () => {
               key={index}
               className={`${item.variant} w-full md:w-[23%] bg-orange-100  py-9 px-5 rounded-lg border-[2px] border-yellow-500`}
             >
-              <h1 className="text-3xl font-extrabold text-center mb-3">
+              <h1 className="text-4xl font-extrabold text-center mb-5">
                 STEP {index + 1}
               </h1>
               <ul>
@@ -22,7 +22,7 @@ const HowToBuy = () => {
                   <div className="mb-5">
                     <p
                       key={listIndex}
-                      className="text-sm md:text-base text-center md:text-left"
+                      className="text-2xl md:text-base text-center md:text-left"
                     >
                       {list}
                     </p>

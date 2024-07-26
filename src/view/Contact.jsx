@@ -8,15 +8,15 @@ const Contact = () => {
         <h1 className="title text-6xl font-extrabold text-yellow-500">
           CONTACT US
         </h1>
-        <p className="text-base text-gray-200 font-medium tracking-wider">
+        <p className="text-xl md:text-base text-gray-200 font-medium tracking-wider">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
           aspernatur.
         </p>
-        <ul className="flexStart gap-7 mt-5">
+        <ul className="flex justify-start items-center gap-7 mt-5">
           {social.map((Item, index) => (
             <li
               key={index}
-              className="h-[55px] w-[55px] flex items-center justify-center rounded-full bg-gray-500"
+              className="h-[55px] w-[55px] flex items-center justify-center rounded-full bg-yellow-500"
             >
               <a href={Item.url} className="">
                 <img
